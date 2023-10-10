@@ -4,11 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #root {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #root > div:nth-child(1) {
+        width: 40vw;
+        height: 40vw;
+        background-color: aqua;
+      }
+      #root input {
+        width: 10vw;
+        height: 10vw;
+        background-image: url(몬스터볼.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-left: 5vw;
+      }
+    </style>
   </head>
   <body>
     <div id="root">
       <div></div>
-      <input type="button" placeholder="클릭" title="button" />
+      <input type="button" title="button" value="" />
     </div>
     <script></script>
   </body>
